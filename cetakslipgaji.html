@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slip Gaji</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .total {
+            font-weight: bold;
+        }
+
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Slip Gaji</h2>
+    <p>Periode: 1 Oktober - 31 Oktober 2024</p>
+
+    <table>
+        <tr>
+            <th>Nama</th>
+            <td>Ilyas Saputra</td>
+        </tr>
+        <tr>
+            <th>Jabatan</th>
+            <td>Vice President</td>
+        </tr>
+        <tr>
+            <th>Gaji Pokok</th>
+            <td>Rp 100.000.000</td>
+        </tr>
+        <tr>
+            <th>Tunjangan</th>
+            <td>Rp 100.000.000</td>
+        </tr>
+        <tr>
+            <th>Bonus</th>
+            <td>Rp 20.000.000</td>
+        </tr>
+        <tr class="total">
+            <th>Total Gaji</th>
+            <td>Rp 220.000.000</td>
+        </tr>
+    </table>
+
+    <button class="button" onclick="window.print()">Cetak Slip</button>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laporan Harian</title>
+    <style>
+        /* Gaya CSS untuk tabel */
+    </style>
+</head>
+<body>
+    <h2>Laporan Harian</h2>
+    <form>
+        <label for="tanggal">Tanggal:</label>
+        <input type="date" id="tanggal" name="tanggal">
+        <button type="button" onclick="tampilkanLaporan()">Tampilkan</button>
+    </form>
+    <div id="hasilLaporan"></div>
+
+    <script>
+        function tampilkanLaporan() {
+            var tanggal = document.getElementById("tanggal").value;
+            // Di sini, kita akan mengambil data dari database berdasarkan tanggal yang dipilih
+            // dan menampilkannya dalam bentuk tabel di div dengan id "hasilLaporan"
+            // Contoh sederhana:
+            var hasil = "<table><tr><th>Nama Produk</th><th>Jumlah Terjual</th></tr><tr><td>Produk A</td><td>10</td></tr></table>";
+            document.getElementById("hasilLaporan").innerHTML = hasil;
+        }
+    </script>
+</body>
+</html>
